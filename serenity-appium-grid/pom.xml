@@ -72,15 +72,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18.1</version>
                 <configuration>
-                    <!--<skip>true</skip>-->
-                    <parallel>methods</parallel>
-                    <threadCount>2</threadCount>
+                    <skip>true</skip>
                 </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.18.1</version>
                 <configuration>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/Test*.java</include>
