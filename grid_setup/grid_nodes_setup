@@ -4,8 +4,8 @@ java -jar selenium-server-standalone-2.52.0.jar -role hub -port 4444
 
 setup node1:
 
-appium --nodeconfig nodes1.json -p 4446 --udid emulator--5554
+appium --nodeconfig nodes1.json -p 4446 --udid 192.168.57.101:5555
 
 setup node2:
 
-appium --nodeconfig nodes4.json -p 4723 --udid 879e6464
+appium --nodeconfig nodes2.json -p 4723 --udid 192.168.57.102:5555

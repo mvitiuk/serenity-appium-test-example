@@ -3,14 +3,15 @@
       "browserName": "Android", 
       "maxInstances": 2, 
       "platform":"ANDROID",
-      "deviceName":"emulator-5554",
-      "platformVersion":"5.1",
+      "deviceName":"192.168.57.101:5555",
+      "platformVersion":"4.3",
       "newCommandTimeout":"3000",
       "deviceReadyTimeout":5,
       "platformName":"Android"
   }],
-  "configuration": {
-      "cleanUpCycle": 2000,
+
+    "configuration": {
+       "cleanUpCycle": 2000,
         "timeout":30000,
         "hub": "http://localhost:4444/grid/register",
         "host": "localhost",

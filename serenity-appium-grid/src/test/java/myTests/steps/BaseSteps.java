@@ -38,6 +38,16 @@ public class BaseSteps {
 			capa.setCapability("deviceName", "224bf2e7");
 		}
 
+		if (deviceModel.equals("HTC")) {
+			capa.setCapability("deviceName", "192.168.57.101:5555");
+			capa.setCapability("platformVersion","4.3");
+		}
+
+		if (deviceModel.equals("Nexus")) {
+			capa.setCapability("deviceName", "192.168.57.102:5555");
+			capa.setCapability("platformVersion","5.1");
+		}
+
 		if (deviceModel.equals("emulator")) {
 			capa.setCapability("deviceName", "emulator-5554");
 			capa.setCapability("platformVersion","5.1");

@@ -3,12 +3,11 @@
       "browserName": "Android", 
       "maxInstances": 2, 
       "platform":"ANDROID",
-      "deviceName":"879e6464",
-      "platformVersion":"5.0",
+      "deviceName":"192.168.57.102:5555",
+      "platformVersion":"5.1",
       "newCommandTimeout":"3000",
       "deviceReadyTimeout":5,
-      "platformName":"Android",
-      "udid":"879e6464"
+      "platformName":"Android"
   }],
         
     "configuration": {

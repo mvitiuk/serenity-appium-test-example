@@ -11,9 +11,6 @@ public class EndUserSteps extends BaseSteps {
 
 	private static MainPage mainPage;
 
-	String name;
-	String phone;
-	String email;
 
     @Step
     public void openMainPage(){
@@ -33,6 +30,14 @@ public class EndUserSteps extends BaseSteps {
 		String actualMessage = mainPage.getMessageText();
 		assertTrue("Dialog is not displayed", mainPage.isAlertDialogDisplayed());
 		assertEquals("Wrong message", expectedMessage, actualMessage);
+	}
+
+	@Step
+	public void shouldSeeCorrectMessageWithDataFromCSV(String expectedMessage) {
+		String actualMessage = mainPage.getMessageText();
+		assertTrue("Dialog is not displayed", mainPage.isAlertDialogDisplayed());
+		assertEquals("Wrong message", expectedMessage, actualMessage);
+
 	}
 
 
